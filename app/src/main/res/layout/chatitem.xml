@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/leftChatview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatbg"
+        android:padding="9dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:id="@+id/LeftMessage"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are You"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/RightChatview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="88dp"
+        android:background="@drawable/sendbg"
+        android:padding="9dp"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/RightMessage"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am Fine, What About You"/>
+    </LinearLayout>
+
+</LinearLayout>

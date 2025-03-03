@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="280dp"
+    android:background="@drawable/screenshot_2024_12_14_233934"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:src="@drawable/womensafety"
+            android:padding="20dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suraksha"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_safety_appliction"
+            android:textStyle="italic"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

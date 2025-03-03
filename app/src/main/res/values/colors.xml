@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#D3CE9D</color>
+    <color name="a">#FF1807</color>
+    <color name="c">#59AFF4</color>
+    <color name="d">#371B13</color>
+    <color name="f">#D3D3D3</color>
+    <color name="g">#525252</color>
+    <color name="h">#FB6095</color>
+    <color name="appbar">#832C48</color>
+</resources>

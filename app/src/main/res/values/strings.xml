@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Suraksha</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="not_feeling_safe">Not, Feeling Safe</string>
+    <string name="log_in_here">Log In Here!!</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="create_one">Create One!</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_password1">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_email1">Enter your email</string>
+    <string name="dont_s_have_any_account_create_one">Dont\'s have any account?? Create One</string>
+    <string name="login">LogIn !!</string>
+    <string name="todo">TODO</string>
+    <string name="swipe_only_if_you_are_feeling_unsafe">Swipe only if you are feeling Unsafe</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="contacts">Contacts</string>
+    <string name="profile">Profile</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="emergency">Emergency</string>
+    <string name="health">Health</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_essentials">Your Essentials</string>
+    <string name="product_image">Product Image</string>
+    <string name="sanitary_pads">Sanitary Pads</string>
+    <string name="_10">₹10</string>
+    <string name="_5_off">₹5 OFF</string>
+    <string name="decrease_quantity">Decrease Quantity</string>
+    <string name="hsudhkd">__</string>
+    <string name="decrease_quantitygj">Decrease Quantity</string>
+    <string name="delivery_charges_free">Delivery Charges: FREE</string>
+    <string name="delivery_in_10_minutes">Delivery In : 10 Minutes</string>
+    <string name="swipe_for_location_sharing">Swipe for location sharing</string>
+    <string name="harshit_tandon">Harshit Tandon</string>
+    <string name="_91_8528909000">+91 8528909000</string>
+    <string name="tandonharshit757_gmail_com">tandonharshit757@gmail.com</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="sparsh_sharma">Sparsh Sharma</string>
+    <string name="_91_7876731206">+91 7876731206</string>
+    <string name="ui_ux_designer">Ui/Ux Designer</string>
+    <string name="prava_pratap">Prava Pratap</string>
+    <string name="_91_8955818439">+91 8955818439</string>
+    <string name="pravalchauhan7679gmail_com">pravalchauhan7679gmail.com</string>
+    <string name="data_analist">Data Analist</string>
+    <string name="about_us">About US</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="your_number">Your Number:</string>
+    <string name="mother">Mother:</string>
+    <string name="title_activity_locatenear">Locatenear</string>
+    <string name="YOUR_API_Key">AIzaSyDAfQEDBUhpR-rQNdnQydlBx2N0eJFqKfg</string>
+    <string name="don_t_have_any_account">Don\'t have any Account</string>
+    <string name="user_guide">User Guide</string>
+    <string name="name1">Name:</string>
+    <string name="gender">Gender:</string>
+    <string name="father">Father:</string>
+    <string name="best_friend">Best Friend:</string>
+    <string name="circularimg">circularimg</string>
+    <string name="profile1">Profile</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="your_safety_appliction">Your Safety Appliction</string>
+    <string name="pravalchauhan7679_gmail_com1">pravalchauhan7679@gmail_com</string>
+    <string name="pravalchauhan7679_gmail_com12">pravalchauhan7679@gmail.com</string>
+    <string name="ensure_your_safety_by_sharing_your_location_with_your_trusted_contacts">Ensure Your Safety by Sharing Your Location with Your Trusted Contacts</string>
+    <string name="falgun_mehta">Falgun Mehta</string>
+    <string name="fagunmehta786_gmail_com">fagunmehta786@gmail.com</string>
+    <string name="frontend_designer">Frontend Designer</string>
+    <string name="about_us1">About Us</string>
+    <string name="store">Store</string>
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_suraksha_bot">SurakshaBot</string>
+    <string name="your_suraksha_ai">Your Suraksha Ai</string>
+    <string name="your_periods_calculator">Your Periods Calculator</string>
+    <string name="set_date">Set Date</string>
+    <string name="update_dates">Update Dates</string>
+    <string name="setbtn1">Set Date</string>
+    <string name="praval_pratap">Praval Pratap</string>
+    <string name="data_analyst">Data Analyst</string>
+    <string name="ai_ml_developer">Ai/Ml Developer</string>
+</resources>
