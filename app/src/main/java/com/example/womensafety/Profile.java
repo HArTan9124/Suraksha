@@ -34,7 +34,6 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
         initializeViews();
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -83,19 +82,20 @@ public class Profile extends AppCompatActivity {
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                // Log the snapshot for debugging
+                Log.d("Profile", "Snapshot: " + snapshot.getValue());
+
                 if (snapshot.exists()) {
                     UserData userData = snapshot.getValue(UserData.class);
-
                     if (userData != null) {
                         textViewName.setText("Name: " + (userData.getName() != null ? userData.getName() : "N/A"));
-                        textViewGender.setText("Gender: " + (userData.gender != null ? userData.gender : "N/A"));
-                        textViewContactNumber.setText("Your Number: " + (userData.contactNumber != null ? userData.contactNumber : "N/A"));
-                        textViewDOB.setText("Date of Birth: " + (userData.dob != null ? userData.dob : "N/A"));
-                        textViewDescribe.setText("Description: " + (userData.description != null ? userData.description : "N/A"));
+                        textViewGender.setText("Gender: " + (userData.getGender() != null ? userData.getGender() : "N/A"));
+                        textViewContactNumber.setText("Your Number: " + (userData.getContactNumber() != null ? userData.getContactNumber() : "N/A"));
+                        textViewDOB.setText("Date of Birth: " + (userData.getDob() != null ? userData.getDob() : "N/A"));
+                        textViewDescribe.setText("Description: " + (userData.getDescription() != null ? userData.getDescription() : "N/A"));
 
-                        // Handle Profile Picture
-                        if (userData.profilePicture != null) {
-                            switch (userData.profilePicture) {
+                        if (userData.getProfilePicture() != null) {
+                            switch (userData.getProfilePicture()) {
                                 case "dpb":
                                     profileImage.setImageResource(R.drawable.dpb);
                                     break;
@@ -109,12 +109,13 @@ public class Profile extends AppCompatActivity {
                         } else {
                             profileImage.setImageResource(R.drawable.viewprofiler);
                         }
-
                     } else {
                         Toast.makeText(Profile.this, "User data is null!", Toast.LENGTH_SHORT).show();
+                        Log.e("Profile", "UserData is null");
                     }
                 } else {
                     Toast.makeText(Profile.this, "User data not found!", Toast.LENGTH_SHORT).show();
+                    Log.e("Profile", "Snapshot does not exist");
                 }
             }
 

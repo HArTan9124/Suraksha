@@ -65,7 +65,6 @@ public class Surakshabott extends AppCompatActivity {
 
                 if (handleCustomCommands(question)) return;
 
-                // Show Typing Indicator
                 addToChat("Typing...", Message.SENT_BY_BOT);
                 callAPI(question);
             } else {
@@ -143,7 +142,6 @@ public class Surakshabott extends AppCompatActivity {
 
     private void callAPI(String question) {
         try {
-            // ✅ Corrected JSON payload for Gemini API
             JSONObject jsonBody = new JSONObject();
             jsonBody.put("contents", new JSONArray()
                     .put(new JSONObject()
@@ -165,7 +163,7 @@ public class Surakshabott extends AppCompatActivity {
                 public void onFailure(@NonNull Call call, @NonNull IOException e) {
                     Log.e("API_ERROR", "API Call Failed", e);
                     runOnUiThread(() -> {
-                        messageList.remove(messageList.size() - 1); // Remove "Typing..."
+                        messageList.remove(messageList.size() - 1);
                         addToChat("Failed to get response", Message.SENT_BY_BOT);
                     });
                 }
@@ -192,7 +190,7 @@ public class Surakshabott extends AppCompatActivity {
                                     String botReply = parts.getJSONObject(0).optString("text", "").trim();
                                     if (!botReply.isEmpty()) {
                                         runOnUiThread(() -> {
-                                            messageList.remove(messageList.size() - 1); // Remove "Typing..."
+                                            messageList.remove(messageList.size() - 1);
                                             addToChat(botReply, Message.SENT_BY_BOT);
                                         });
                                     }

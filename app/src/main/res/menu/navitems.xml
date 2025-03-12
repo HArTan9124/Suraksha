@@ -6,11 +6,11 @@
         android:title="@string/emergency"
         android:icon="@drawable/emergency"
         android:theme="@style/MenuItemBackground" />
-    <item
-        android:id="@+id/addmore"
-        android:title="Add Friends"
-        android:icon="@drawable/addfrnd"
-        android:theme="@style/MenuItemBackground" />
+<!--    <item-->
+<!--        android:id="@+id/addmore"-->
+<!--        android:title="Add Friends"-->
+<!--        android:icon="@drawable/addfrnd"-->
+<!--        android:theme="@style/MenuItemBackground" />-->
 
     <item
         android:id="@+id/Location"

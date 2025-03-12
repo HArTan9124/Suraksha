@@ -1,24 +1,33 @@
 package com.example.womensafety;
 
 public class UserData {
-    public String name;
-    public String gender;
-    public String contactNumber;
-    public String dob;
-    public String description;
-    public String profilePicture;
-    public boolean id;
-    public UserData(String name, String gender, String contactNumber, String dob, String description, String profilePicture, String uid) {
-        this.name = name;
-        this.gender = gender;
-        this.contactNumber = contactNumber;
-        this.dob = dob;
-        this.description = description;
-        this.profilePicture = profilePicture;
-    }
+    private String name;
+    private String gender;
+    private String contactNumber;
+    private String dob;
+    private String description;
+    private String profilePicture;
+
+    // Default constructor required for calls to DataSnapshot.getValue(UserData.class)
+    public UserData() { }
 
     public String getName() {
         return name;
     }
-
+    public String getGender() {
+        return gender;
+    }
+    public String getContactNumber() {
+        return contactNumber;
+    }
+    public String getDob() {
+        return dob;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public String getProfilePicture() {
+        return profilePicture;
+    }
 }
+

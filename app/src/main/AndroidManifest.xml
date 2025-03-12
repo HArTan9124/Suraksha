@@ -22,12 +22,7 @@
             android:name=".Surakshabott"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".Chat"
-            android:exported="false" />
-        <activity
-            android:name=".Addfrnd"
-            android:exported="false" />
+
         <activity
             android:name=".UserLocation"
             android:exported="false" />

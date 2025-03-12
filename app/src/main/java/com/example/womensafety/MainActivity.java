@@ -122,9 +122,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, health.class));
         } else if (id == R.id.emergency) {
             startActivity(new Intent(this, Emergency.class));
-        } else if (id == R.id.addmore) {
-            startActivity(new Intent(this, Addfrnd.class));
-        } else if (id == R.id.Profile) {
+        }
+//        } else if (id == R.id.addmore) {
+//            startActivity(new Intent(this, Addfrnd.class));
+//        }
+          else if (id == R.id.Profile) {
             startActivity(new Intent(this, Profile.class));
         } else if (id == R.id.aboutus) {
             startActivity(new Intent(this, AboutUs.class));
