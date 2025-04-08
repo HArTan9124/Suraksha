@@ -38,7 +38,7 @@ android {
 }
 
 dependencies {
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation(libs.okhttp)
     implementation(libs.lottie)
     implementation(libs.playServicesLocation)
     implementation(libs.appcompat)

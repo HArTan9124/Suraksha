@@ -20,18 +20,21 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_margin="8dp"
-            android:weightSum="2">
-            <ImageView
-                android:layout_width="0dp"
+            android:weightSum="1">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieViewlogin"
+                android:layout_width="100dp"
                 android:layout_height="200dp"
-                android:layout_weight="1"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/loginoo"
-                android:outlineSpotShadowColor="@color/white"/>
+                app:lottie_rawRes="@raw/signin"
+                android:layout_weight="0.5"
+                app:lottie_autoPlay="true"
+                android:layout_marginBottom="16dp"
+                android:clipToOutline="true" />
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_gravity="start">
@@ -55,70 +58,49 @@
                     android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/enter_your_email1"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="4dp" />
-            <EditText
+            android:hint="Email"
+            android:layout_marginBottom="15dp"
+            app:boxStrokeColor="@color/white"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailLi"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:autofillHints="Email"
-                android:textStyle="italic"
-                android:textColorHint="@color/d"
-                android:background="@drawable/edittext"
-                android:hint="Email"
-                android:padding="2dp"
-                android:gravity="center"
-                android:maxHeight="45dp" />
-        </LinearLayout>
-        <LinearLayout
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/enter_your_password1"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="2dp" />
-            <EditText
+            android:hint="Password"
+            android:layout_marginBottom="15dp"
+            app:boxStrokeColor="@color/white"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusTopStart="12dp"
+            android:layout_margin="10dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordLI"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="textPassword"
-                android:textColorHint="@color/d"
-                android:textStyle="italic"
-                android:background="@drawable/edittext"
-                android:hint="Password"
-                android:padding="2dp"
-                android:gravity="center"
-                android:maxHeight="45dp" />
-        </LinearLayout>
+                android:textSize="18sp"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -185,3 +167,4 @@
 
     </LinearLayout>
 </ScrollView>
+

@@ -23,11 +23,15 @@
             android:layout_margin="8dp"
             android:weightSum="2">
 
-            <ImageView
-                android:layout_width="0dp"
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieViewcreateAcc"
+                android:layout_width="100dp"
                 android:layout_height="200dp"
-                android:layout_weight="1"
-                android:src="@drawable/loginoo"/>
+                app:lottie_rawRes="@raw/signin"
+                android:layout_weight="0.5"
+                app:lottie_autoPlay="true"
+                android:layout_marginBottom="16dp"
+                android:clipToOutline="true" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -55,69 +59,51 @@
                     android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_margin="8dp">
-            <TextView
-                android:layout_width="0dp"
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:layout_weight="1"
-                android:text="@string/enter_your_email1"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="4dp" />
-            <EditText
-                android:id="@+id/emailca"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/edittext"
                 android:hint="Email"
-                android:textStyle="italic"
-                android:textColorHint="@color/d"
-                android:padding="2dp"
-                android:gravity="center"
-                android:maxHeight="45dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_margin="8dp">
-            <TextView
-                android:layout_width="0dp"
+                android:layout_marginBottom="15dp"
+                app:boxStrokeColor="@color/white"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailca"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:layout_weight="1"
-                android:text="@string/enter_your_password1"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="4dp" />
-            <EditText
-                android:id="@+id/passwordca"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:layout_weight="1"
-                android:background="@drawable/edittext"
                 android:hint="Password"
-                android:textColorHint="@color/d"
-                android:textStyle="italic"
-                android:padding="2dp"
-                android:gravity="center"
-                android:maxHeight="45dp" />
-        </LinearLayout>
+                android:layout_marginBottom="15dp"
+                app:boxStrokeColor="@color/white"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
         <LinearLayout
             android:layout_margin="8dp"
             android:layout_width="match_parent"
